@@ -167,6 +167,7 @@
             this.bazaToolStripMenuItem.Name = "bazaToolStripMenuItem";
             this.bazaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bazaToolStripMenuItem.Text = "Baza";
+            this.bazaToolStripMenuItem.Click += new System.EventHandler(this.bazaToolStripMenuItem_Click);
             // 
             // ulEu_radioButton
             // 

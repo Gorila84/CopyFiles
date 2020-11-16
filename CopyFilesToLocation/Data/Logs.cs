@@ -16,7 +16,8 @@ namespace CopyFilesToLocation.Data
             DirectoryInfo logDirInfo = null;
             FileInfo logFileInfo;
 
-            string logFilePath = "C:\\Users\\Maciek\\source\\repos\\CopyFilesToLocation\\Logs\\";
+            //string logFilePath = "C:\\Users\\Maciek\\source\\repos\\CopyFilesToLocation\\Logs\\";
+            string logFilePath = Path.Combine(Environment.CurrentDirectory, "Logs");
             logFilePath = logFilePath + "Log-" + System.DateTime.Today.ToString("MM-dd-yyyy") + "." + "txt";
             logFileInfo = new FileInfo(logFilePath);
             logDirInfo = new DirectoryInfo(logFileInfo.DirectoryName);

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace CopyFilesToLocation
 {
@@ -22,10 +23,13 @@ namespace CopyFilesToLocation
         private void GgetData_Click(object sender, EventArgs e)
         {
             //int rowsLimit = Convert.ToInt32(fetchFirst_numericBox.Value);
-
+            
             GetDatas dataBaseConnection = new GetDatas();
             string zapytka = vendor_richTextBox.Text;
-            result_dataGridView.DataSource = dataBaseConnection.GetDocumentheadersDocuments(zapytka);
+            result_dataGridView.DataSource = dataBaseConnection.GetDocumentheadersDocuments(zapytka,
+                                                                                            ulEu_radioButton,
+                                                                                            ulNa_radioButton,
+                                                                                            ulAar_radioButton);
 
             //if ((vendor_checkBox.Checked || countryCode_CheckBox.Checked || fileName_checkBox.Checked) != true)
             //{
@@ -93,6 +97,12 @@ namespace CopyFilesToLocation
         {
             GetPathToCopy getPathToCopy = new GetPathToCopy();
             copyTo_TextBox.Text = getPathToCopy.GethPathFromDialog();
+        }
+
+        private void bazaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PolaczenieZBaza polaczenieZBaza = new PolaczenieZBaza();
+            polaczenieZBaza.Show();
         }
     }
 }
