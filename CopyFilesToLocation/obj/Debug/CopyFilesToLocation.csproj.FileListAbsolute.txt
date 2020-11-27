@@ -1,7 +1,6 @@
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
-C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\CopyFilesToLocation.exe.config
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\CopyFilesToLocation.exe
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\CopyFilesToLocation.pdb
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\SQLite-net.dll
@@ -27,3 +26,7 @@ C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\obj\Debug\C
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\obj\Debug\CopyFilesToLocation.exe
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\obj\Debug\CopyFilesToLocation.pdb
 C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\obj\Debug\CopyFilesToLocation.PolaczenieZBaza.resources
+C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\CopyFilesToLocation.exe.config
+C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\DotNetZip.dll
+C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\DotNetZip.pdb
+C:\Users\Maciek\source\repos\CopyFilesToLocation\CopyFilesToLocation\bin\Debug\DotNetZip.xml

@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-using static System.Windows.Forms.DataFormats;
 
 namespace CopyFilesToLocation.Data
 {
@@ -21,7 +20,7 @@ namespace CopyFilesToLocation.Data
         #endregion Zmienne
         
         #region Metody
-        public List<Documentheaders> GetDocumentheadersDocuments(string zapytka, 
+        public List<Documentheaders> GetDocumentheadersDocuments(string userSqlQuery, 
                                                                  RadioButton radioButtonEu, 
                                                                  RadioButton radioButtonNa,
                                                                  RadioButton radioButtonAa)
@@ -39,10 +38,10 @@ namespace CopyFilesToLocation.Data
                 }
                 if (ConnectToBase.State == System.Data.ConnectionState.Open)
                 {
-                    MessageBox.Show("Polaczono");
+                    MessageBox.Show("Polaczono z bazą");
                 }
                 //SqlQuery = string.Format("select * from dbo.Documentheader");
-                SqlQuery = string.Format(zapytka);
+                SqlQuery = string.Format(userSqlQuery);
                 Command = new SqlCommand(SqlQuery, ConnectToBase);
                 Reader = Command.ExecuteReader();
 
@@ -74,225 +73,7 @@ namespace CopyFilesToLocation.Data
 
             return documentList;
         }
-        //public List<Documentheaders> GetDataByVendor(string vendors)
-        //{
-
-        //    var documentList = new List<Documentheaders>();
-
-        //    try
-        //    {
-        //        if (ConnectToBase.State == System.Data.ConnectionState.Closed)
-        //        {
-        //            ConnectToBase.Open();
-        //        }
-        //        SqlQuery = string.Format("select * from dbo.Documentheader where Vendor in (" + vendors + ")");
-        //        Command = new SqlCommand(SqlQuery, ConnectToBase);
-        //        Reader = Command.ExecuteReader();
-
-        //        if (Reader.HasRows)
-        //        {
-        //            while (Reader.Read())
-        //            {
-        //                documentList.Add(new Documentheaders(Convert.ToInt32(Reader["Id"].ToString()), Reader["Path"].ToString(),
-        //                                Reader["FileName"].ToString(), Reader["Country"].ToString(), Convert.ToInt32(Reader["Vendor"].ToString())));
-        //            }
-        //            Reader.Close();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        string error = string.Format("Problem podczas pobierania danych:\n{0} ", ex.Message);
-        //        MessageBox.Show(error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //    finally
-        //    {
-        //        ConnectToBase.Close();
-        //        if (Reader != null)
-        //        {
-        //            Reader.Dispose();
-        //            Reader = null;
-        //        }
-        //    }
-
-        //    return documentList;
-        //}
-        //public List<Documentheaders> GetDataByCountryCode(string countryCode)
-        //{
-
-        //    var documentList = new List<Documentheaders>();
-
-        //    try
-        //    {
-        //        if (ConnectToBase.State == System.Data.ConnectionState.Closed)
-        //        {
-        //            ConnectToBase.Open();
-        //        }
-        //        SqlQuery = string.Format("select * from dbo.Documentheader where Country in (" + countryCode + ")");
-        //        Command = new SqlCommand(SqlQuery, ConnectToBase);
-        //        Reader = Command.ExecuteReader();
-
-        //        if (Reader.HasRows)
-        //        {
-        //            while (Reader.Read())
-        //            {
-        //                documentList.Add(new Documentheaders(Convert.ToInt32(Reader["Id"].ToString()), Reader["Path"].ToString(),
-        //                                Reader["FileName"].ToString(), Reader["Country"].ToString(), Convert.ToInt32(Reader["Vendor"].ToString())));
-        //            }
-        //            Reader.Close();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        string error = string.Format("Problem podczas pobierania danych:\n{0} ", ex.Message);
-        //        MessageBox.Show(error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //    finally
-        //    {
-        //        ConnectToBase.Close();
-        //        if (Reader != null)
-        //        {
-        //            Reader.Dispose();
-        //            Reader = null;
-        //        }
-        //    }
-
-        //    return documentList;
-        //}
-        //public List<Documentheaders> GetDataByCountryCodeAndVendor(string vendor, string countryCode)
-        //{
-
-        //    var documentList = new List<Documentheaders>();
-
-        //    try
-        //    {
-        //        if (ConnectToBase.State == System.Data.ConnectionState.Closed)
-        //        {
-        //            ConnectToBase.Open();
-        //        }
-        //        SqlQuery = string.Format("select * from dbo.Documentheader where Vendor in ("+vendor+") and Country in (" + countryCode + ");");
-        //        Command = new SqlCommand(SqlQuery, ConnectToBase);
-        //        Reader = Command.ExecuteReader();
-
-        //        if (Reader.HasRows)
-        //        {
-        //            while (Reader.Read())
-        //            {
-        //                documentList.Add(new Documentheaders(Convert.ToInt32(Reader["Id"].ToString()), Reader["Path"].ToString(),
-        //                                Reader["FileName"].ToString(), Reader["Country"].ToString(), Convert.ToInt32(Reader["Vendor"].ToString())));
-        //            }
-        //            Reader.Close();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        string error = string.Format("Problem podczas pobierania danych:\n{0} ", ex.Message);
-        //        MessageBox.Show(error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //    finally
-        //    {
-        //        ConnectToBase.Close();
-        //        if (Reader != null)
-        //        {
-        //            Reader.Dispose();
-        //            Reader = null;
-        //        }
-        //    }
-
-        //    return documentList;
-
-           
-        //    }
-
-        //public List<Documentheaders> GetDataByCountryCodeAndVendorAndFileName(string vendor, string countryCode, string filename)
-        //{
-
-        //    var documentList = new List<Documentheaders>();
-
-        //    try
-        //    {
-        //        if (ConnectToBase.State == System.Data.ConnectionState.Closed)
-        //        {
-        //            ConnectToBase.Open();
-        //        }
-        //        SqlQuery = string.Format("select * from dbo.Documentheader where Vendor in (" + vendor + ") " +
-        //                                   "and Country in (" + countryCode + ") and FileName in("+filename+");");
-        //        Command = new SqlCommand(SqlQuery, ConnectToBase);
-        //        Reader = Command.ExecuteReader();
-
-        //        if (Reader.HasRows)
-        //        {
-        //            while (Reader.Read())
-        //            {
-        //                documentList.Add(new Documentheaders(Convert.ToInt32(Reader["Id"].ToString()), Reader["Path"].ToString(),
-        //                                Reader["FileName"].ToString(), Reader["Country"].ToString(), Convert.ToInt32(Reader["Vendor"].ToString())));
-        //            }
-        //            Reader.Close();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        string error = string.Format("Problem podczas pobierania danych:\n{0} ", ex.Message);
-        //        MessageBox.Show(error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //    finally
-        //    {
-        //        ConnectToBase.Close();
-        //        if (Reader != null)
-        //        {
-        //            Reader.Dispose();
-        //            Reader = null;
-        //        }
-        //    }
-
-        //    return documentList;
-        //}
-        //public List<Documentheaders> GetDataByFileName(string filename)
-        //{
-
-        //    var documentList = new List<Documentheaders>();
-
-        //    try
-        //    {
-        //        if (ConnectToBase.State == System.Data.ConnectionState.Closed)
-        //        {
-        //            ConnectToBase.Open();
-        //        }
-        //        SqlQuery = string.Format("select * from dbo.Documentheader where FileName in(" + filename + ");");
-        //        Command = new SqlCommand(SqlQuery, ConnectToBase);
-        //        Reader = Command.ExecuteReader();
-
-        //        if (Reader.HasRows)
-        //        {
-        //            while (Reader.Read())
-        //            {
-        //                documentList.Add(new Documentheaders(Convert.ToInt32(Reader["Id"].ToString()), Reader["Path"].ToString(),
-        //                                Reader["FileName"].ToString(), Reader["Country"].ToString(), Convert.ToInt32(Reader["Vendor"].ToString())));
-        //            }
-        //            Reader.Close();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        string error = string.Format("Problem podczas pobierania danych:\n{0} ", ex.Message);
-        //        MessageBox.Show(error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //    finally
-        //    {
-        //        ConnectToBase.Close();
-        //        if (Reader != null)
-        //        {
-        //            Reader.Dispose();
-        //            Reader = null;
-        //        }
-        //    }
-
-        //    return documentList;
-        //}
+        
         #endregion Metody
     }
 }

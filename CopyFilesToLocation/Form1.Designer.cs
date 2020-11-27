@@ -47,6 +47,7 @@
             this.ulEu_radioButton = new System.Windows.Forms.RadioButton();
             this.ulNa_radioButton = new System.Windows.Forms.RadioButton();
             this.ulAar_radioButton = new System.Windows.Forms.RadioButton();
+            this.zipFolders_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.result_dataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -165,7 +166,7 @@
             // bazaToolStripMenuItem
             // 
             this.bazaToolStripMenuItem.Name = "bazaToolStripMenuItem";
-            this.bazaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bazaToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.bazaToolStripMenuItem.Text = "Baza";
             this.bazaToolStripMenuItem.Click += new System.EventHandler(this.bazaToolStripMenuItem_Click);
             // 
@@ -202,11 +203,22 @@
             this.ulAar_radioButton.Text = "UL AAR";
             this.ulAar_radioButton.UseVisualStyleBackColor = true;
             // 
+            // zipFolders_button
+            // 
+            this.zipFolders_button.Location = new System.Drawing.Point(1010, 137);
+            this.zipFolders_button.Name = "zipFolders_button";
+            this.zipFolders_button.Size = new System.Drawing.Size(103, 25);
+            this.zipFolders_button.TabIndex = 16;
+            this.zipFolders_button.Text = "Spakuj foldery";
+            this.zipFolders_button.UseVisualStyleBackColor = true;
+            this.zipFolders_button.Click += new System.EventHandler(this.zipFolders_button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1125, 699);
+            this.Controls.Add(this.zipFolders_button);
             this.Controls.Add(this.ulAar_radioButton);
             this.Controls.Add(this.ulNa_radioButton);
             this.Controls.Add(this.ulEu_radioButton);
@@ -252,6 +264,7 @@
         private System.Windows.Forms.RadioButton ulEu_radioButton;
         private System.Windows.Forms.RadioButton ulNa_radioButton;
         private System.Windows.Forms.RadioButton ulAar_radioButton;
+        private System.Windows.Forms.Button zipFolders_button;
     }
 }
 

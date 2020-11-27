@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ulEuIP_textBox = new System.Windows.Forms.TextBox();
-            this.ulEuDbName_textBox = new System.Windows.Forms.TextBox();
-            this.ulEuPort_textBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ulEuPort_textBox = new System.Windows.Forms.TextBox();
+            this.ulEuDbName_textBox = new System.Windows.Forms.TextBox();
+            this.ulEuIP_textBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -50,11 +50,11 @@
             this.ulAarDbName_textBox = new System.Windows.Forms.TextBox();
             this.ulAarIP_textBox = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.saveConnectionString_button = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.saveConnectionString_button = new System.Windows.Forms.Button();
+            this.userName_textBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -76,35 +76,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "UL EU";
             // 
-            // ulEuIP_textBox
+            // label3
             // 
-            this.ulEuIP_textBox.Location = new System.Drawing.Point(101, 59);
-            this.ulEuIP_textBox.Name = "ulEuIP_textBox";
-            this.ulEuIP_textBox.Size = new System.Drawing.Size(219, 20);
-            this.ulEuIP_textBox.TabIndex = 0;
-            // 
-            // ulEuDbName_textBox
-            // 
-            this.ulEuDbName_textBox.Location = new System.Drawing.Point(101, 85);
-            this.ulEuDbName_textBox.Name = "ulEuDbName_textBox";
-            this.ulEuDbName_textBox.Size = new System.Drawing.Size(219, 20);
-            this.ulEuDbName_textBox.TabIndex = 1;
-            // 
-            // ulEuPort_textBox
-            // 
-            this.ulEuPort_textBox.Location = new System.Drawing.Point(101, 111);
-            this.ulEuPort_textBox.Name = "ulEuPort_textBox";
-            this.ulEuPort_textBox.Size = new System.Drawing.Size(219, 20);
-            this.ulEuPort_textBox.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "IP";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(58, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Port";
             // 
             // label2
             // 
@@ -115,14 +94,35 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "DB Name";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Port";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(67, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(17, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "IP";
+            // 
+            // ulEuPort_textBox
+            // 
+            this.ulEuPort_textBox.Location = new System.Drawing.Point(101, 111);
+            this.ulEuPort_textBox.Name = "ulEuPort_textBox";
+            this.ulEuPort_textBox.Size = new System.Drawing.Size(219, 20);
+            this.ulEuPort_textBox.TabIndex = 2;
+            // 
+            // ulEuDbName_textBox
+            // 
+            this.ulEuDbName_textBox.Location = new System.Drawing.Point(101, 85);
+            this.ulEuDbName_textBox.Name = "ulEuDbName_textBox";
+            this.ulEuDbName_textBox.Size = new System.Drawing.Size(219, 20);
+            this.ulEuDbName_textBox.TabIndex = 1;
+            // 
+            // ulEuIP_textBox
+            // 
+            this.ulEuIP_textBox.Location = new System.Drawing.Point(101, 59);
+            this.ulEuIP_textBox.Name = "ulEuIP_textBox";
+            this.ulEuIP_textBox.Size = new System.Drawing.Size(219, 20);
+            this.ulEuIP_textBox.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -256,13 +256,23 @@
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.textBox2);
-            this.groupBox4.Controls.Add(this.textBox3);
+            this.groupBox4.Controls.Add(this.userName_textBox);
             this.groupBox4.Location = new System.Drawing.Point(503, 268);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(371, 203);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "User";
+            // 
+            // saveConnectionString_button
+            // 
+            this.saveConnectionString_button.Location = new System.Drawing.Point(258, 142);
+            this.saveConnectionString_button.Name = "saveConnectionString_button";
+            this.saveConnectionString_button.Size = new System.Drawing.Size(75, 23);
+            this.saveConnectionString_button.TabIndex = 6;
+            this.saveConnectionString_button.Text = "Zapisz";
+            this.saveConnectionString_button.UseVisualStyleBackColor = true;
+            this.saveConnectionString_button.Click += new System.EventHandler(this.saveConnectionString_button_Click);
             // 
             // label5
             // 
@@ -289,21 +299,12 @@
             this.textBox2.Size = new System.Drawing.Size(219, 20);
             this.textBox2.TabIndex = 1;
             // 
-            // textBox3
+            // userName_textBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(114, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 20);
-            this.textBox3.TabIndex = 0;
-            // 
-            // saveConnectionString_button
-            // 
-            this.saveConnectionString_button.Location = new System.Drawing.Point(258, 142);
-            this.saveConnectionString_button.Name = "saveConnectionString_button";
-            this.saveConnectionString_button.Size = new System.Drawing.Size(75, 23);
-            this.saveConnectionString_button.TabIndex = 6;
-            this.saveConnectionString_button.Text = "Zapisz";
-            this.saveConnectionString_button.UseVisualStyleBackColor = true;
+            this.userName_textBox.Location = new System.Drawing.Point(114, 75);
+            this.userName_textBox.Name = "userName_textBox";
+            this.userName_textBox.Size = new System.Drawing.Size(219, 20);
+            this.userName_textBox.TabIndex = 0;
             // 
             // PolaczenieZBaza
             // 
@@ -356,6 +357,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox userName_textBox;
     }
 }

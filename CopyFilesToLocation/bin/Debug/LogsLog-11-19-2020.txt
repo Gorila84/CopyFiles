@@ -1,0 +1,18 @@
+Plik TestowyPlik1.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234567
+Plik TestowyPlik2.txt nie został skopiowany
+Plik TestowyPlik3.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234569
+Plik TestowyPlik4.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234570
+Plik TestowyPlik2.txt nie został skopiowany
+Plik TestowyPlik5.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234572
+Plik TestowyPlik7.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234573
+Plik TestowyPlik8.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234574
+Plik TestowyPlik9.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234575
+Plik TestowyPlik10.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234567
+Plik TestowyPlik11.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234568
+Plik TestowyPlik12.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234569
+Plik TestowyPlik13.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234568
+Plik TestowyPlik14.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234568
+Plik TestowyPlik15.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234568
+Plik TestowyPlik16.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234573
+Plik TestowyPlik17.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234574
+Plik TestowyPlik18.txt został skopiowany z C:\C#\TestKopiowaniaPlików\FolderZKtóregoKopiuje\ do C:\C#\TestKopiowaniaPlików\Nowy folder\1234575
