@@ -6,6 +6,7 @@ namespace CopyFilesToLocation.Services
 {
     public class GetConnectionToDb
     {
+        //komentarz
         private string host;
         private string connection;
         private string ip;
